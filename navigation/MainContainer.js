@@ -21,7 +21,8 @@ export default function MainContainer(){
                 tabBarIcon: ({focused, color, size}) => {
                     let iconName;
                     let rn = route.name;
-
+                    
+                    // switching between different screens
                     if (rn === home){
                         iconName = focused ? 'home' : 'home-outline';
                     } else if (rn === scanner) {
